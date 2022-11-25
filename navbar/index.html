@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.jpg" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Training</span>
+                    <span class="profession">Web developper</span>
+                </div>
+            </div>
+
+            <i class="material-icons toggle">
+                chevron_left
+            </i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="nav-link search-box">
+                        <i class="material-icons icon">
+                            search
+                        </i>
+                        <input type="search" name="search-box" id="search-box" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-icons icon">
+                                home
+                            </i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-icons icon">
+                                bar_chart
+                            </i>
+                            <span class="text nav-text">Revenues</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-icons icon">
+                                notifications
+                            </i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-icons icon">
+                                analytics
+                            </i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-icons icon">
+                                favorite
+                            </i>
+                            <span class="text nav-text">Like</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="material-icons icon">
+                            logout
+                        </i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="material-icons icon moon">dark_mode</i>
+                        <i class="material-icons icon sun">light_mode</i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+    
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

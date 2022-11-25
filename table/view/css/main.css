@@ -1,0 +1,56 @@
+* {
+  font-family: sans-serif;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 10px;
+  font-size: 0.9rem;
+  min-width: 400px;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+}
+.content-table thead tr {
+  background: #272727;
+  color: #fff;
+  font-weight: lighter;
+  text-align: left;
+}
+.content-table thead tr .search {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+  gap: 0.2rem;
+}
+.content-table thead tr .search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-top: 3px;
+  color: #fff;
+  font-size: 13px;
+}
+.content-table td, .content-table th {
+  padding: 12px 15px;
+}
+.content-table th {
+  padding-bottom: 5px;
+}
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-last-of-type(even) {
+  background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #272727;
+}
+.content-table tbody tr.active {
+  color: #272727;
+  font-weight: bold;
+}
+.content-table tbody tr:hover {
+  background-color: #e4e5ea;
+}/*# sourceMappingURL=main.css.map */

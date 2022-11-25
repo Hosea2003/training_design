@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: baseline;
+    min-height: 100vh;
+}
+
+.left{
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.title{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* .calendar-component{
+} */
+
+.wrapper{
+    padding: 1rem 2rem;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.calendar-component .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px 15px;
+}
+
+.header .current-date{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #4fd276;
+}
+
+.header .icons i{
+    font-size: .8rem;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 7px;
+    color: #4fd276;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.header .icons i:last-child{
+    margin-right: -10px;
+}
+
+.header .icons i:hover{
+    border: 1px solid #4fd276;
+}
+
+.calendar{
+    padding:10px;
+}
+
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    gap:5px;
+}
+
+.calendar .weeks li{
+    font-weight: 500;
+}
+
+.calendar ul li{
+    width: calc((100% - 30px) / 7);
+    position: relative;
+}
+
+.calendar .days li{
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+    font-size: 14px;
+}
+
+.calendar ul li::before{
+    position:absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    color:#fff;
+}
+
+.calendar ul li.inactive{
+    color: #b9b8b8;
+}
+
+.calendar ul li:hover::before{
+    background: #dddddd;
+}
+
+.calendar ul li.active{
+    color: #fff;
+}
+
+.calendar ul li.active::before{
+    background: #4fd276;
+}
+
+.right{
+    width: 100%;
+}
+
+.search{
+    height: 100px;
+    width: 100%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passowrd Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="password-generator">
+        <h3 class="title">Password Generator</h3>
+        <div class="password-input">
+            <input type="text" name="password-input" id="password">
+            <i class="material-icons copyIcon">
+                filter_none
+            </i>
+        </div>
+        <div class="range-box">
+            <input type="range" name="range" id="range" min="6" max="16" value="8">
+            <span class="slider-number">8</span>
+        </div>
+
+        <button class="generateBtn">Generate Password</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,72 @@
+$primary-color:#272727;
+$hover-color:#e4e5ea;
+
+*{
+    font-family: sans-serif;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 10px;
+    font-size: .9rem;
+    min-width: 400px;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+
+    thead tr{
+        background: $primary-color;
+        color: #fff;
+        font-weight: lighter;
+        text-align: left;
+
+        .search{
+            border-bottom: 1px solid #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 5px;
+            gap:.2rem;
+
+            input{
+                background: transparent;
+                border: none;
+                outline: none;
+                margin-top: 3px;
+                color:#fff;
+                font-size: 13px;
+            }
+        }
+    }
+
+    td{
+        padding:12px 15px;
+    }
+
+    th{
+        @extend td;
+        padding-bottom: 5px;
+    }
+
+    tbody{
+        tr{
+            border-bottom: 1px solid #dddddd;
+
+            &:nth-last-of-type(even){
+                background-color: #f3f3f3;
+            }
+
+            &:last-of-type{
+                border-bottom: 2px solid $primary-color;
+            }
+
+            &.active{
+                color:$primary-color;
+                font-weight: bold;
+            }
+
+            &:hover{
+                background-color: $hover-color;
+            }
+        }
+    }
+}
